@@ -5,3 +5,8 @@ RSpec.configure do |config|
   config.order = 'random'
   config.include Aruba::Api
 end
+
+def run_script(name)
+  cmd = "ruby ../../#{name}"
+  run_interactive(cmd)
+end
