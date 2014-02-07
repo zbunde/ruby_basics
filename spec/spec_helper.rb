@@ -7,6 +7,10 @@ RSpec.configure do |config|
 end
 
 def run_script(name)
-  cmd = "ruby ../../#{name}"
+  cmd = if File.exists?(File.expand_path('examples'))
+    "ruby ../../examples/#{name}"
+  else
+    "ruby ../../bin/#{name}"
+  end
   run_interactive(cmd)
 end
