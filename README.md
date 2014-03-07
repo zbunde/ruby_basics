@@ -17,10 +17,10 @@ Write a program that asks the user for their name, and then prints out "Hello [n
 
 Write a program that prints out verses of "99 bottles of beer on the wall", according to the following rules:
 
-* The user must type "sing 88", where 88 is any positive number
+* The user must type "88", where 88 is any positive number, and the program will print those verses.
 * If the user runs the program without typing anything, print "I need to know how many bottles to sing!"
 * If the user runs the program and specifies a verse, print all the lines from the song starting at that verse
-* If the user types anything but "sing <number>", show an error and exit
+* If the user types anything but "<number>", show an error and exit
 
 **Skills**
 
