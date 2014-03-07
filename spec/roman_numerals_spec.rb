@@ -15,7 +15,7 @@ describe "RomanNumerals" do
     run_script("roman_numerals.rb")
     type("39")
 
-    expect(all_output).to include("XXXVIIII")
+    expect(all_output).to include("XXXIX")
     expect(all_output).to_not match("V")
   end
 
@@ -33,7 +33,7 @@ describe "RomanNumerals" do
     run_script("roman_numerals.rb")
     type("1468")
 
-    expect(all_output).to include("MCCCCLXVIII")
+    expect(all_output).to include("MCDLXVIII")
     expect(all_output).to_not match("CCLVII")
   end
 end
