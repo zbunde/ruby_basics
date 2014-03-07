@@ -49,7 +49,7 @@ Each time the program prints "NO, NOT SINCE 1944!", it should print a different,
 
 ### Roman Numerals
 
-Write a program that converts numbers into [http://www.rapidtables.com/convert/number/how-number-to-roman-numerals.htm](Roman numerals).
+Write a program that converts numbers into [Roman numerals](http://www.rapidtables.com/convert/number/how-number-to-roman-numerals.htm).
 
 Decimal value (v) | Roman numeral (n)
 ------------------|------------------
