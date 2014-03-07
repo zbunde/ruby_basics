@@ -9,5 +9,12 @@ describe "Greetings" do
 
     expect(all_output).to include("What is your name?")
     expect(all_output).to include("Hello Mike!")
+
+    # Make sure we didn't hard code Mike
+    run_script("greetings.rb")
+    type("Jeff")
+
+    expect(all_output).to include("What is your name?")
+    expect(all_output).to include("Hello Jeff!")
   end
 end
