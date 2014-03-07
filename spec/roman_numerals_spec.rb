@@ -10,6 +10,15 @@ describe "RomanNumerals" do
     expect(all_output).to_not match("XX")
   end
 
+  it "handles the numbers that are just below the next boundary" do
+    pending
+    run_script("roman_numerals.rb")
+    type("9")
+
+    expect(all_output).to include("IX")
+    expect(all_output).to_not match("VIIII")
+  end
+
   it "converts a double digit number to traditional roman numeral" do
     pending
     run_script("roman_numerals.rb")

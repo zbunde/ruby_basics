@@ -26,8 +26,10 @@ describe "DeafGrandma" do
       type("BLAH")
     end
 
-    years = all_output.scan(/(\d{4})/).flatten.map(&:to_i)
-    expect(years.uniq).to have_at_least(2).items
-    years.uniq.each { |year| expect(1930..1950).to include(year) }
+    years_that_have_been_output = all_output.scan(/(\d{4})/).flatten.map(&:to_i)
+    # If we have 2 of them then we they seem to be random
+    expect(years_that_have_been_output.uniq).to have_at_least(2).items
+    # Make sure that the years are in the correct range.
+    years_that_have_been_output.uniq.each { |year| expect(1930..1950).to include(year) }
   end
 end
