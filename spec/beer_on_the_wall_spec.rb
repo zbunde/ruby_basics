@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "WallBeer" do
-  it "prints out the first verse for 99 bottles of beer on the wall, when told to 'sing'" do
+  it "prints out the first verse for 99 bottles of beer on the wall, when told to 'sing' with 99" do
     pending
     run_script("wall_beer.rb")
     type("sing 99")
@@ -19,7 +19,7 @@ describe "WallBeer" do
     expect(all_output).to_not include("1 bottle of beer on the wall, 1 bottle of beer.\nTake one down and pass it around, no bottles of beer on the wall.\n")
   end
 
-  it "responds with 'Fine, don't listen to my song.', when told anything else besides 'Sing!''" do
+  it "responds with 'Fine, don't listen to my song.', when told anything else besides 'sing''" do
     pending
     run_script("wall_beer.rb")
     type("I don't want to hear you sing")
