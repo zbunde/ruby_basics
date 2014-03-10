@@ -15,8 +15,7 @@ romans = {
 }
 
 puts "Enter a number to convert to roman numerals: "
-number = gets.chomp.to_i
-x = number
+x = gets.chomp.to_i
 keyArray = []
 valueArray = []
 numValue = nil
@@ -43,5 +42,5 @@ else
   puts "Please enter a number greater than 0"
 end
 
-puts "36 is equal to "+valueArray.join
+puts  "is equal to "+valueArray.join
 
