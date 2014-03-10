@@ -1,8 +1,8 @@
 puts "Please say something to grandma"
 
-command = gets.chomp
+grandma = gets.chomp
 
-case command
+case grandma
   when "Hi, Grandma"
     puts "HUH?! SPEAK UP SONNY"
   when "HI GRANDMA"
